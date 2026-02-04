@@ -1,3 +1,4 @@
+# Updated requirements with Phi-3-mini support
 torch>=2.0.0
 transformers>=4.35.0
 sentence-transformers>=2.2.2
@@ -13,7 +14,15 @@ tensorboard>=2.15.0
 fastapi>=0.104.0
 uvicorn>=0.24.0
 pydantic>=2.5.0
-openai>=1.3.0
+
+# LLM Options (choose one):
+# Option 1: Local LLM (Phi-3-mini) - RECOMMENDED FOR KAGGLE
+accelerate>=0.24.0  # For Phi-3-mini loading
+
+# Option 2: OpenAI API (if using GPT-4)
+# openai>=1.3.0
+
+# Networking
 grpcio>=1.59.0
 paho-mqtt>=1.6.1
 h5py>=3.10.0
