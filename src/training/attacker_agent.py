@@ -351,7 +351,7 @@ class AttackerAgent:
         technique_counts = {}
         for strategy in recent:
             tid = strategy['technique_id']
-            technique counts[tid] = technique_counts.get(tid, 0) + 1
+            technique_counts[tid] = technique_counts.get(tid, 0) + 1
         
         # Find most common techniques
         sorted_techniques = sorted(
